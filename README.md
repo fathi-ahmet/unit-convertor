@@ -6,24 +6,24 @@ conversions through a simple, responsive interface.
 
 ## Features
 
--   **Length conversions:** millimeters, centimeters, meters,
-    kilometers, inches, feet, yards, and miles.
--   **Weight conversions:** milligrams, grams, kilograms, ounces, and
-    pounds.
--   **Temperature conversions:** Celsius, Fahrenheit, and Kelvin.
--   Separate pages for each measurement category.
--   Server-side form handling and input validation.
--   Clear error messages for invalid values and physically invalid
-    temperatures.
--   Results rounded to a maximum of six decimal places, with trailing
-    zeros removed.
--   Responsive styling and visible keyboard-focus indicators.
+- **Length conversions:** millimeters, centimeters, meters,
+  kilometers, inches, feet, yards, and miles.
+- **Weight conversions:** milligrams, grams, kilograms, ounces, and
+  pounds.
+- **Temperature conversions:** Celsius, Fahrenheit, and Kelvin.
+- Separate pages for each measurement category.
+- Server-side form handling and input validation.
+- Clear error messages for invalid values and physically invalid
+  temperatures.
+- Results rounded to a maximum of six decimal places, with trailing
+  zeros removed.
+- Responsive styling and visible keyboard-focus indicators.
 
 ## Requirements
 
--   [Node.js](https://nodejs.org/) (a current LTS release is
-    recommended)
--   npm (included with Node.js)
+- [Node.js](https://nodejs.org/) (a current LTS release is
+  recommended)
+- npm (included with Node.js)
 
 ## Getting Started
 
@@ -33,13 +33,13 @@ conversions through a simple, responsive interface.
 
 3.  Install the dependencies:
 
-    ``` bash
+    ```bash
     npm install
     ```
 
 4.  Start the server:
 
-    ``` bash
+    ```bash
     npm start
     ```
 
@@ -51,11 +51,13 @@ The root URL redirects to the length converter.
 
 ## Available Pages
 
-  URL              Description
-  ---------------- -----------------------------------
-  `/length`        Convert between length units
-  `/weight`        Convert between weight units
-  `/temperature`   Convert between temperature units
+URL Description
+
+---
+
+`/length` Convert between length units
+`/weight` Convert between weight units
+`/temperature` Convert between temperature units
 
 ## How to Use
 
@@ -73,13 +75,13 @@ set the `PORT` environment variable before starting the app.
 
 **macOS / Linux**
 
-``` bash
+```bash
 PORT=4000 npm start
 ```
 
 **Windows PowerShell**
 
-``` powershell
+```powershell
 $env:PORT=4000
 npm start
 ```
@@ -88,7 +90,7 @@ Then visit `http://localhost:4000`.
 
 ## Project Structure
 
-``` text
+```text
 unit-converter/
 ├── public/
 │   └── style.css     # Page layout, form controls, and visual styling
@@ -99,26 +101,26 @@ unit-converter/
 
 ## Implementation Notes
 
--   The app uses Express to serve static assets and handle form
-    submissions.
--   Length and weight units are converted through a shared base-unit
-    factor.
--   Temperature conversions use Celsius as the intermediate value.
--   Input accepts signed decimal and scientific-notation numbers, with
-    optional comma separators.
--   Invalid numeric input and unsupported unit selections are rejected
-    with an explanatory message.
--   Absolute-zero checks prevent temperatures below zero Kelvin.
+- The app uses Express to serve static assets and handle form
+  submissions.
+- Length and weight units are converted through a shared base-unit
+  factor.
+- Temperature conversions use Celsius as the intermediate value.
+- Input accepts signed decimal and scientific-notation numbers, with
+  optional comma separators.
+- Invalid numeric input and unsupported unit selections are rejected
+  with an explanatory message.
+- Absolute-zero checks prevent temperatures below zero Kelvin.
 
 ## Dependencies
 
--   [Express](https://expressjs.com/) `^4.19.2`
+- [Express](https://expressjs.com/) `^4.19.2`
 
 ## Development
 
 Run the server with:
 
-``` bash
+```bash
 npm start
 ```
 
@@ -130,3 +132,7 @@ The project currently has no automated test script configured in
 No license is specified in the project files. Add a `LICENSE` file
 before distributing the project if you intend to grant others formal
 reuse rights.
+
+## Project URL
+
+[Unit Converter project](https://roadmap.sh/projects/unit-converter)
