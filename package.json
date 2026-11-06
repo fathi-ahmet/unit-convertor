@@ -1,0 +1,8 @@
+{
+  "name": "unit-converter",
+  "version": "1.0.0",
+  "description": "Server-rendered unit converter (length, weight, temperature)",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "dependencies": { "express": "^4.19.2" }
+}
